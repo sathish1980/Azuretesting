@@ -17,7 +17,7 @@ pipeline {
     }
     stage('Start container') {
       steps {
-        sh 'docker-compose up -d --no-color --wait'
+        sh 'docker compose up -d --no-color --wait'
       }
     }
     stage('Run tests against the container') {
