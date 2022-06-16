@@ -15,9 +15,9 @@ pipeline {
         sh 'docker system prune -a --volumes -f'
       }
     }
-    stage('Start container') {
+    stage('docker-compose up') {
       steps {
-        sh 'docker compose up'
+        sh 'docker-compose up'
       }
     }
     stage('Run tests against the container') {
