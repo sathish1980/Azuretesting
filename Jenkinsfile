@@ -6,6 +6,7 @@ stages{
 	{
 		steps
 		{
+		sh 'node --version'
 		echo "build"
 		echo "Test"
 		}
