@@ -2,7 +2,7 @@ pipeline
 {
 agent 
 { 
-docker 
+any 
 { 
 image 'node:13.8'
 } 
